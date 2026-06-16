@@ -21,7 +21,7 @@
 - GitHub repository link: https://github.com/ruinogenesis/ICT111-TempName-Hein/
 - Screenshot: folder structure and Issues screenshots saved in /screenshots
 - File created: README.md, docs/team-profile.md, docs/idea-log.md, docs/weekly-logbook.md, docs/problem-notes.md
-- Commit link: 
+- Commit link: https://github.com/ruinogenesis/ICT111-TempName-Hein/commits/main/
 
 ### Decision Made This Week
 We will pursue a lightweight web-based tracking dashboard, with the Web3 airdrop and quest tracker as the leading candidate, and confirm the final direction after Lab 2 opportunity scanning.
