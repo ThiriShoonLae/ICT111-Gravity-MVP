@@ -24,7 +24,7 @@
 - Commit link: https://github.com/ruinogenesis/ICT111-Gravity-MVP/commits/main/
 
 ### Decision Made This Week
-We will pursue a lightweight web-based tracking dashboard, with the Web3 airdrop and quest tracker as the leading candidate, and confirm the final direction after Lab 2 opportunity scanning.
+We will pursue a lightweight web-based tracking dashboard, with everything as the leading candidate, and confirm the final direction after Lab 2 opportunity scanning.
 
 ### Plan for Next Week
 In Lab 2 we will run opportunity scanning, compare the three ideas against feasibility and user evidence, and select one primary problem and target user group for the MVP.
