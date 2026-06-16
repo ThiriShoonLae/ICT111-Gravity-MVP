@@ -7,7 +7,7 @@ Instructor: Dr. Herison Surbakti
 Project Type: 14-Labs Continuous IT Startup MVP Development
 
 ## Team Name
-TrackStack
+Gravity
 
 ## Team Members and Roles
 
