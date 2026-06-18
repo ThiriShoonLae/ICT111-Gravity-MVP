@@ -14,7 +14,7 @@ Gravity
 |---|---|---|
 | 6704806 | Hein Htet Aung | Product Lead + Documentation Lead | Define problem, target users, value proposition; maintain README and logbook |
 | 6610285 | Thiri Shoon Lae Oo | UX/UI Lead + Validation Lead | Design wireframes and user flow; run customer discovery and collect evidence |
-| ID | [Teammate 2 name] | Technical and Business Lead | Manage repository structure and prototype feasibility, business aspects |
+| 6602963 | [Eimyat Yadanar Mon] | Technical and Business Lead | Manage repository structure and prototype feasibility, business aspects |
 
 ## Initial Problem Area
 Our team is interested in **how RSU students buy and sell used items when they move in and out of university**. Students who are leaving, graduating, or moving dorms need to clear furniture, appliances, textbooks, and other items quickly, while new and continuing students want those same things cheaply. Today this happens in scattered Facebook and LINE groups where listings are buried, unsearchable, and disorganised. We want to build a simple student-only marketplace that connects buyers and sellers directly.
