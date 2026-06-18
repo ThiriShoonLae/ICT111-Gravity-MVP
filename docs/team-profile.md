@@ -8,7 +8,7 @@ Gravity
 |---|---|---|---|
 | 6704806 | Hein Htet Aung | Product Lead + Documentation Lead | Define problem, target users, value proposition; maintain README and logbook |
 | 6610285 | Thiri Shoon Lae Oo | UX/UI Lead + Validation Lead | Design wireframes and user flow; run customer discovery and collect evidence |
-| ID | [Teammate 2 Name] | Technical and Business Lead | Manage repository structure and prototype feasibility, business aspects |
+| Eimyat Yadanar Mon | 6602963 | Technical and Business Lead | Manage repository structure and prototype feasibility, business aspects |
 
 
 ## Team Skills Inventory
@@ -16,7 +16,7 @@ Gravity
 |---|---|---|---|
 | Hein Htet Aung | HTML/CSS/JS, SQL, data analysis | dashboard layout | team cordination, technical coordination |
 | Thiri Shoon Lae Oo | JavaScript beginner | Figma beginner | team coordination |
-| [Teammate 2 Name] | [e.g. spreadsheets, basic web] | [e.g. UI layout, wireframing] | [e.g. interviewing, survey design] |
+| Eimyat Yadanar Mon | spreadsheets, business-related tools | economy analysis | interviewing, collecting real-time data |
 
 ## Team Working Agreement
 1. Meeting schedule: Every week after class, plus an online check-in mid-week
