@@ -13,7 +13,7 @@
 ## Team Skills Inventory
 | Member | Technical Skills | Design Skills | Business/Communication Skills |
 |---|---|---|---|
-| Hein Htet Aung | HTML/CSS/JS, SQL, data analysis | dashboard layout | team cordination, technical coordination |
+| Hein Htet Aung | HTML/CSS/JS, SQL, data analysis | dashboard layout | team coordination, technical coordination |
 | Thiri Shoon Lae Oo | JavaScript beginner | Figma beginner | team coordination |
 | Eimyat Yadanar Mon | spreadsheets, business-related tools | economy analysis | interviewing, collecting real-time data |
 
