@@ -25,6 +25,17 @@ Rangsit University students in two roles: **sellers** who are moving out, gradua
 ## Selected IT Venture Direction
 After Lab 2 opportunity scanning, our team selected **Gravity**, a **peer-to-peer student marketplace**. The target users are RSU students who need to sell or buy used items when moving in or out, and who currently rely on messy, unsearchable Facebook and LINE groups. The platform connects buyers and sellers directly — sellers post listings, buyers browse, search, and filter, and the platform then connects the two parties so they finish the deal themselves. We deliberately do **not** hold inventory or process payments, which keeps the build feasible and avoids any advanced cybersecurity. A simple AI assistant helps sellers write listings and lets buyers search in natural language. This idea scored highest on our NUF matrix (New 3, Useful 5, Feasible 5 = 13).
 
+## Customer Problem Discovery (Lab 03)
+In Lab 3, our team collected early problem evidence from target users to confirm whether the problem we selected in Lab 2 is real and important, not just team opinion.
+
+**Target Respondents.** We focused on RSU students who buy or sell used items around moving in or out: graduating and leaving students, new and continuing students, international students, and dorm residents. We gathered 15 early responses through a short survey and brief interviews (recorded in `/data/raw-responses.xlsx`).
+
+**Main Evidence Found.** The strongest, most repeated pattern was scattered, unsearchable buy/sell channels (11 of 15 respondents), followed by usable items being given away or discarded under time pressure (7 of 15) and measurable time loss of about 30–90 minutes per item. Current workarounds are Facebook groups, LINE chats, word of mouth, and noticeboards. A trust and safety concern about meeting strangers also appeared.
+
+**Updated Problem Statement.** RSU students who move out at the end of a term — especially graduating and international students — lose time and money trying to sell used furniture, appliances, and textbooks through scattered, unsearchable Facebook and LINE groups, and often give items away or discard them; new and continuing students struggle to find affordable used versions in time and end up buying new.
+
+**Decision for Next Step.** The problem is confirmed as real and recurring, so we keep the direction but **narrow the target segment** to movers dealing with higher-value items, and we will add a safer contact step to the planned solution. Full details are in `/docs/customer-discovery-summary.md`, `/docs/problem-notes.md`, `/docs/assumption-evidence-table.md`, and `/docs/customer-questions.md`.
+
 ## Technology Possibility
 Possible technologies:
 - Web application
@@ -53,9 +64,10 @@ Most likely for our MVP: a **web application + marketplace/digital platform**, w
 |---|---|---|---|
 | Lab 1 | Lab setup and idea log | Repository, team profile, initial idea log, weekly logbook | Completed |
 | Lab 2 | IT opportunity scanning | Opportunity scan, NUF scoring sheet, selected opportunity | Completed |
+| Lab 3 | Customer problem discovery | Customer questions, problem notes, response data, assumption-evidence table, discovery summary | Completed |
 
 ## Current Status
-In Lab 2, we reviewed our three Lab 1 ideas, discovered six possible IT opportunities from real campus and small-business contexts, and mapped each one to a feasible software-only prototype path. We scored all six ideas using the NUF method (New, Useful, Feasible) in a scoring spreadsheet, and selected the student secondhand marketplace as our semester MVP because it had the highest total and combined a real, recurring problem with strong feasibility. The repository now reflects a single, clearly chosen project direction.
+In Lab 3, we ran customer problem discovery for Gravity. We defined our target respondents, prepared non-leading discovery questions, and collected 15 early responses from students who buy and sell used items when moving. We separated our assumptions from the evidence, identified the repeated pain points (scattered channels, time loss, discarded items, and trust concerns), and wrote an evidence-based updated problem statement. The evidence confirms the problem is real, so we are keeping the direction and narrowing the target segment.
 
 ## Next Step
-In Lab 3, we will prepare customer discovery questions, identify target student respondents (recent movers, dorm residents, graduating/international students), and collect evidence to confirm that buying and selling used items when moving is a real, painful problem worth solving.
+In Lab 4, we will define our customer segment and persona in detail and write user stories based on the discovery evidence, then begin turning the validated problem into MVP requirements.
