@@ -71,3 +71,55 @@ In Lab 3, we ran customer problem discovery for Gravity. We defined our target r
 
 ## Next Step
 In Lab 4, we will define our customer segment and persona in detail and write user stories based on the discovery evidence, then begin turning the validated problem into MVP requirements.
+
+## Lab 04: User Persona, Requirements, and User Stories
+
+In Lab 04 we converted the Lab 03 evidence into a concrete product definition: a primary persona, requirements mapped to the lecturer's fixed FR-01–FR-16, user stories with acceptance criteria, and a prioritized MVP feature list that becomes the baseline for the final prototype.
+
+### Primary Target User
+RSU student **sellers** moving out under time pressure (especially graduating and international students) who must sell higher-value used items — furniture, appliances, textbooks — within days. Student **buyers** at move-in are served by the same MVP screens.
+
+### Persona Summary
+- **Persona name:** Su Su, Year 4 International Student
+- **User type:** Graduating student who must clear her room before flying home
+- **Main goal:** Post each item once and sell it within days to recover value instead of discarding it
+- **Main pain point:** Listings buried across scattered, unsearchable Facebook/LINE groups while under severe time pressure (E01, E02, E03)
+- **Current workaround:** Posting in 3+ Facebook/LINE groups, asking friends, dorm noticeboard — then giving items away or throwing them out
+
+### Key Requirements
+| Req ID | Requirement | Priority | Related Evidence |
+|---|---|---|---|
+| FR-03 | Create Listing form (category, price, condition, photo, pickup area) | Must | E01, E02, E03 |
+| FR-05/FR-06 | Central listings page with search, filter, and categories | Must | E01 — 11/15 respondents |
+| FR-08 | Listing status tracking (Available / Reserved / Sold) | Must | E04 |
+| FR-09 | Admin: verify accounts, remove invalid listings | Must | E05 |
+| FR-15 / NFR-02 | No public personal contact details; reveal contact only after both agree | Must | E05 — R013 |
+| NFR-01 | Mobile-friendly interface | Must | E02 |
+| NFR-04 | RSU-verified students only (email + one-time in-person ID check, no ID images stored) | Must | E05 |
+
+Full list (all fixed FR-01–FR-16 + NFRs): [`/docs/system-requirements.md`](docs/system-requirements.md)
+
+### MVP Feature Scope
+| Feature | Priority | Included in Final Prototype? |
+|---|---|---|
+| Landing page with Browse / Sell actions | Must | Yes |
+| RSU email verification + verified badge | Must | Yes |
+| Create Listing form with validation and confirmation | Must | Yes |
+| Listings page with search, filter, and categories | Must | Yes |
+| Listing detail page | Must | Yes |
+| Status tracking (Available / Reserved / Sold) | Must | Yes |
+| Contact request (reveal after both agree) | Must | Yes |
+| Admin panel (verify, moderate, fix status) | Must | Yes |
+| Mobile-responsive layout | Must | Yes |
+| Dashboard summary | Should | Yes |
+| AI listing helper | Could | Optional |
+| AI natural-language search, payments, ratings | Won't (MVP) | No |
+
+Full prioritization: [`/docs/mvp-feature-list.md`](docs/mvp-feature-list.md) · User stories: [`/docs/user-stories.md`](docs/user-stories.md) · Persona: [`/docs/user-persona.md`](docs/user-persona.md)
+
+### Diagram Links
+- User flow diagram: [`/diagrams/user-flow.png`](diagrams/user-flow.png)
+- Use case diagram: [`/diagrams/use-case-diagram.png`](diagrams/use-case-diagram.png)
+
+### GitHub Contribution Evidence
+All members contributed to this repository through commits, issues, and documentation updates for Lab 04 (see commit history and Issues #-#).
