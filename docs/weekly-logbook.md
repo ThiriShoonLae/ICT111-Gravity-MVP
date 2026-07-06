@@ -81,7 +81,7 @@ We will prepare customer discovery questions focused on how RSU students current
 - Key repeated pattern: scattered, unsearchable buy/sell channels (11 of 15), plus usable items given away or discarded under time pressure (7 of 15)
 
 ### What We Changed Based on Evidence
-We narrowed our target segment to students moving in/out who deal with higher-value items, and we added a safer contact step (in-app message or reveal-contact-after-both-agree) instead of immediately exchanging personal accounts. We kept the overall problem direction because the evidence confirmed it is real.
+We narrowed our target segment to students moving in/out who deal with higher-value items, and we added a safer contact step (in-app message or reveal-contact-after-both-agree) instead of immediately exchanging personal accounts. We also decided to limit access to verified RSU students using a university email plus a one-time in-person student ID check, without storing any ID card images, so the platform stays trusted while avoiding heavy data-protection requirements. We kept the overall problem direction because the evidence confirmed it is real.
 
 ### Problems or Difficulties
 1. Writing questions that did not accidentally pitch the marketplace took a few tries; our first drafts asked for approval instead of behavior.
