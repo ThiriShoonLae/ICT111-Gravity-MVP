@@ -31,7 +31,7 @@ Buying and selling used items at RSU is spread across scattered, unsearchable Fa
 
 ## What We Must Revise
 - Narrow the focus to higher-value items (furniture, appliances, textbooks) and to move-in/move-out periods, rather than every item all year.
-- Add a safer contact step (in-app message or reveal-contact-after-both-agree) instead of immediately exchanging personal accounts.
+- Add a safer contact step (in-app message or reveal-contact-after-both-agree) instead of immediately exchanging personal accounts, and limit access to verified RSU students (university email plus a one-time in-person student ID check, with no ID images stored).
 - Plan an adoption test in a later lab to move from "interest" to real behavior.
 
 ## Decision for Next Lab
