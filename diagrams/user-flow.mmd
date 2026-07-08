@@ -1,0 +1,35 @@
+flowchart TD
+    A([Start]) --> B[Open Gravity landing page]
+    B --> C{RSU verified?}
+    C -->|No| D[Register with RSU email + one-time ID check]
+    D --> E
+    C -->|Yes| E{Buy or sell?}
+
+    E -->|Sell| F[Create listing: category, price, photo, pickup area]
+    F --> G{Fields valid?}
+    G -->|No| H[Show required-fields error]
+    H --> F
+    G -->|Yes| I[Listing posted - status Available]
+    I --> J[Receive contact request]
+
+    E -->|Buy| K[Browse listings]
+    K --> L[Search and filter]
+    L --> M{Item found?}
+    M -->|No| N[Show empty state - refine filters]
+    N --> L
+    M -->|Yes| O[View listing detail]
+    O --> P[Send contact request]
+
+    J --> Q{Seller accepts?}
+    P --> Q
+    Q -->|No| R[Decline - buyer notified]
+    R --> J
+    Q -->|Yes| S[Contact details revealed to both]
+    S --> T[Meet on campus and complete deal]
+    T --> U[Seller marks item Sold]
+    U --> V([End])
+
+    W[Admin] --> X[Verify student accounts]
+    W --> Y[Remove invalid listings / correct status]
+    X -.supports.-> C
+    Y -.keeps clean.-> K
