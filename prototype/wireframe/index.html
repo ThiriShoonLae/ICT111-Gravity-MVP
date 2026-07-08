@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gravity Wireframe - Lab 05</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">
+<h1>Gravity</h1>
+<p>Secondhand marketplace for RSU students (Lab 05 wireframe)</p>
+<div class="menu">
+<a href="#home">Home</a>
+<a href="#browse">Browse</a>
+<a href="#sell">Sell an item</a>
+<a href="#detail">Detail</a>
+<a href="#dashboard">Dashboard</a>
+<a href="#admin">Admin</a>
+<a href="#register">Register</a>
+</div>
+</div>
+
+<div class="page">
+
+<div class="box" id="home">
+<h2>Homepage / Landing</h2>
+<p><b>Problem:</b> RSU students moving out waste time selling used items in scattered Facebook and LINE groups. Posts get buried and working items get thrown away.</p>
+<p><b>Target user:</b> Verified RSU students only (sellers moving out, buyers moving in).</p>
+<a class="mainbtn" href="#browse">Browse items</a>
+<a class="mainbtn light" href="#sell">Sell an item</a>
+<p class="small">Contact details stay private until both sides agree.</p>
+</div>
+
+<div class="box" id="browse">
+<h2>Browse Listings</h2>
+<input type="text" placeholder="Search by item name or pickup area...">
+<p>Category:
+<span class="cat selected">All</span>
+<span class="cat">Furniture</span>
+<span class="cat">Appliances</span>
+<span class="cat">Textbooks</span>
+<span class="cat">Other</span>
+</p>
+<table>
+<tr><th>ID</th><th>Item</th><th>Category</th><th>Price</th><th>Pickup Area</th><th>Status</th></tr>
+<tr><td>GL-001</td><td>Wooden study desk</td><td>Furniture</td><td>800 THB</td><td>Dorm A lobby</td><td><span class="status green">Available</span></td></tr>
+<tr><td>GL-002</td><td>Mini fridge 45L</td><td>Appliances</td><td>1,500 THB</td><td>Building 6</td><td><span class="status orange">Reserved</span></td></tr>
+<tr><td>GL-003</td><td>ICT111 textbook</td><td>Textbooks</td><td>250 THB</td><td>ICT building</td><td><span class="status green">Available</span></td></tr>
+<tr><td>GL-004</td><td>Office chair with wheels</td><td>Furniture</td><td>450 THB</td><td>Dorm B</td><td><span class="status gray">Sold</span></td></tr>
+<tr><td>GL-005</td><td>Electric kettle 1.5L</td><td>Appliances</td><td>200 THB</td><td>Dorm A</td><td><span class="status green">Available</span></td></tr>
+</table>
+</div>
+
+<div class="box" id="sell">
+<h2>Create a Listing</h2>
+<p class="small">Fields with * are required.</p>
+<label>Item title *</label>
+<input type="text" placeholder="e.g. Wooden study desk">
+<label>Category *</label>
+<select>
+<option>Furniture</option>
+<option>Appliances</option>
+<option>Textbooks</option>
+<option>Other</option>
+</select>
+<label>Price (THB) *</label>
+<input type="text" placeholder="e.g. 800">
+<label>Condition *</label>
+<select>
+<option>Like new</option>
+<option>Good</option>
+<option>Fair</option>
+</select>
+<label>Pickup area *</label>
+<input type="text" placeholder="e.g. Dorm A lobby">
+<label>Description</label>
+<textarea placeholder="Short description, flaws, deadline to sell..."></textarea>
+<p class="msg">Validation / confirmation message shows here, e.g. "Please complete required fields" or "Listing posted successfully - status: Available".</p>
+<button class="mainbtn">Post listing</button>
+</div>
+
+<div class="box" id="detail">
+<h2>Listing Detail</h2>
+<p><b>Item:</b> Mini fridge 45L <span class="status orange">Reserved</span></p>
+<p><b>Price:</b> 1,500 THB</p>
+<p><b>Category:</b> Appliances &nbsp; <b>Condition:</b> Like new</p>
+<p><b>Pickup area:</b> Building 6</p>
+<p><b>Seller:</b> Su Su <span class="check">✓ RSU verified</span></p>
+<p>Used one semester. Includes small freezer box. Must sell before 30 June.</p>
+<button class="mainbtn">Request contact</button>
+<p class="small">No phone or social accounts shown. Contact is revealed only after both sides agree.</p>
+</div>
+
+<div class="box" id="dashboard">
+<h2>Dashboard / Summary</h2>
+<div class="stats">
+<div class="stat">Total listings: 8</div>
+<div class="stat">Available: 4</div>
+<div class="stat">Reserved: 2</div>
+<div class="stat">Sold: 2</div>
+<div class="stat">Furniture: 3 / Appliances: 2 / Textbooks: 2 / Other: 1</div>
+<div class="stat">Contact requests this week: 5</div>
+</div>
+</div>
+
+<div class="box" id="admin">
+<h2>Admin / Manager View</h2>
+<p>Admin verifies student accounts, updates listing status, and removes invalid listings.</p>
+<table>
+<tr><th>ID</th><th>Item</th><th>Status</th><th>Action</th></tr>
+<tr><td>GL-001</td><td>Wooden study desk</td>
+<td><select><option>Available</option><option>Reserved</option><option>Sold</option></select></td>
+<td><button class="smallbtn">Update</button> <button class="smallbtn red">Remove</button></td></tr>
+<tr><td>GL-002</td><td>Mini fridge 45L</td>
+<td><select><option>Reserved</option><option>Available</option><option>Sold</option></select></td>
+<td><button class="smallbtn">Update</button> <button class="smallbtn red">Remove</button></td></tr>
+</table>
+<p class="msg">Status update / removal confirmation message shows here.</p>
+</div>
+
+<div class="box" id="register">
+<h2>Register / Verify</h2>
+<p>Gravity is for RSU students only.</p>
+<label>RSU email *</label>
+<input type="text" placeholder="your.name@rsu.ac.th">
+<p class="msg">Error / success message shows here, e.g. "Please use your @rsu.ac.th email" or "Account created - verified badge activates after one-time in-person ID check. We never store ID photos."</p>
+<button class="mainbtn">Sign up</button>
+</div>
+
+</div>
+
+<div class="footer">Gravity - ICT111 Lab 05 wireframe - Team Gravity - Rangsit University</div>
+
+</body>
+</html>
