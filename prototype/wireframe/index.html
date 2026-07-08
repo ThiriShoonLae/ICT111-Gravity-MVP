@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gravity — RSU Student Marketplace Wireframe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="brand">
+        <span class="logo">G</span>
+        <div>
+          <h1>Gravity</h1>
+          <p class="tagline">RSU student secondhand marketplace — wireframe (Lab 05)</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#" data-screen="home" class="active">Home</a>
+        <a href="#" data-screen="browse">Browse</a>
+        <a href="#" data-screen="sell">Sell an item</a>
+        <a href="#" data-screen="detail">Detail</a>
+        <a href="#" data-screen="dashboard">Dashboard</a>
+        <a href="#" data-screen="admin">Admin</a>
+        <a href="#" data-screen="register">Register</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- S-01 Homepage / Landing (FR-01, FR-02) -->
+    <section id="home" class="screen active">
+      <div class="hero card">
+        <span class="pill">Verified RSU students only</span>
+        <h2>Buy and sell used items without digging through Facebook groups</h2>
+        <p>Moving out? Sell your desk, fridge, and textbooks before you leave. Moving in? Find them cheap — all in one searchable place.</p>
+        <div class="actions">
+          <button class="btn primary" data-goto="browse">Browse items</button>
+          <button class="btn secondary" data-goto="sell">Sell an item</button>
+        </div>
+        <p class="note">Every seller is verified with an RSU email and a one-time student ID check. Contact details stay private until both sides agree.</p>
+      </div>
+      <div class="card">
+        <h3>How it works</h3>
+        <ol class="steps">
+          <li><strong>Post once.</strong> One listing, visible until you close it — no more reposting in five groups.</li>
+          <li><strong>Be found fast.</strong> Buyers search and filter by category, price, and status.</li>
+          <li><strong>Meet safely.</strong> Contact is revealed only after both of you agree.</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- S-03 Listings page (FR-05, FR-06, FR-08) -->
+    <section id="browse" class="screen">
+      <div class="card">
+        <h2>Browse listings</h2>
+        <input id="search" type="search" placeholder="Search by item name or pickup area..." />
+        <div class="chips" id="chips">
+          <button class="chip active" data-cat="All">All</button>
+          <button class="chip" data-cat="Furniture">Furniture</button>
+          <button class="chip" data-cat="Appliances">Appliances</button>
+          <button class="chip" data-cat="Textbooks">Textbooks</button>
+          <button class="chip" data-cat="Other">Other</button>
+        </div>
+        <div class="grid" id="listing-grid"></div>
+        <p class="empty hidden" id="empty-state">No items match your search — try a different keyword or category.</p>
+      </div>
+    </section>
+
+    <!-- S-02 Create Listing form (FR-03, FR-10, FR-11) -->
+    <section id="sell" class="screen">
+      <div class="card narrow">
+        <h2>Create a listing</h2>
+        <p class="note">Fields marked * are required.</p>
+        <div class="photo-box">+ Add photos (up to 4)</div>
+        <label>Item title *<input id="f-title" placeholder="e.g., Wooden study desk" /></label>
+        <label>Category *
+          <select id="f-cat"><option value="">Select category</option><option>Furniture</option><option>Appliances</option><option>Textbooks</option><option>Other</option></select>
+        </label>
+        <label>Price (THB) *<input id="f-price" type="number" placeholder="e.g., 800" /></label>
+        <label>Condition *
+          <select id="f-cond"><option value="">Select condition</option><option>Like new</option><option>Good</option><option>Fair</option></select>
+        </label>
+        <label>Pickup area *<input id="f-area" placeholder="e.g., Dorm A lobby" /></label>
+        <label>Description<textarea id="f-desc" placeholder="Short description, flaws, deadline to sell..."></textarea></label>
+        <p class="message error hidden" id="form-error">Please complete required fields.</p>
+        <p class="message success hidden" id="form-success">Listing posted successfully — status: Available.</p>
+        <button class="btn primary" id="post-btn">Post listing</button>
+      </div>
+    </section>
+
+    <!-- S-04 Listing detail (FR-07, FR-08, FR-15) -->
+    <section id="detail" class="screen">
+      <div class="card narrow">
+        <div class="photo-box large">Photo — Mini fridge 45L</div>
+        <div class="detail-head">
+          <h2>Mini fridge 45L</h2>
+          <span class="badge reserved">Reserved</span>
+        </div>
+        <p class="price">฿1,500</p>
+        <table class="detail-table">
+          <tr><td>Category</td><td>Appliances</td></tr>
+          <tr><td>Condition</td><td>Like new</td></tr>
+          <tr><td>Pickup area</td><td>Building 6</td></tr>
+          <tr><td>Posted</td><td>21 Jun 2026</td></tr>
+          <tr><td>Seller</td><td>Su Su <span class="verified">✓ RSU verified</span></td></tr>
+        </table>
+        <p>Used one semester. Includes small freezer box. Must sell before my flight home on 30 June.</p>
+        <p class="message success hidden" id="contact-sent">Contact request sent — you'll see the seller's contact once they accept.</p>
+        <button class="btn primary" id="contact-btn">Request contact</button>
+        <p class="note">No phone or social accounts are shown here. Contact details are revealed only after both sides agree.</p>
+      </div>
+    </section>
+
+    <!-- S-05 Dashboard (FR-12) -->
+    <section id="dashboard" class="screen">
+      <div class="card">
+        <h2>Dashboard</h2>
+        <div class="stats">
+          <div class="stat"><span class="num">8</span>Total listings</div>
+          <div class="stat"><span class="num ok">4</span>Available</div>
+          <div class="stat"><span class="num warn">2</span>Reserved</div>
+          <div class="stat"><span class="num muted">2</span>Sold</div>
+        </div>
+        <h3>Listings per category</h3>
+        <div class="bars">
+          <div class="bar-row"><span>Furniture</span><div class="bar"><div style="width:37.5%"></div></div><span>3</span></div>
+          <div class="bar-row"><span>Appliances</span><div class="bar"><div style="width:25%"></div></div><span>2</span></div>
+          <div class="bar-row"><span>Textbooks</span><div class="bar"><div style="width:25%"></div></div><span>2</span></div>
+          <div class="bar-row"><span>Other</span><div class="bar"><div style="width:12.5%"></div></div><span>1</span></div>
+        </div>
+        <p class="note">Contact requests this week: 5</p>
+      </div>
+    </section>
+
+    <!-- S-06 Admin (FR-09, FR-08) -->
+    <section id="admin" class="screen">
+      <div class="card">
+        <h2>Admin panel</h2>
+        <h3>Pending verifications</h3>
+        <table>
+          <thead><tr><th>Student</th><th>RSU email</th><th>ID check</th><th>Action</th></tr></thead>
+          <tbody>
+            <tr><td>Kaung M.</td><td>kaung.m@rsu.ac.th</td><td>Done in person</td><td><button class="btn small approve">Approve</button></td></tr>
+            <tr><td>Pim N.</td><td>pim.n@rsu.ac.th</td><td>Not yet</td><td><button class="btn small" disabled>Waiting</button></td></tr>
+          </tbody>
+        </table>
+        <h3>Manage listings</h3>
+        <p class="message success hidden" id="admin-msg">Status updated.</p>
+        <table>
+          <thead><tr><th>ID</th><th>Item</th><th>Status</th><th>Actions</th></tr></thead>
+          <tbody id="admin-rows"></tbody>
+        </table>
+        <p class="note">Removing a listing asks for confirmation first — this action cannot be undone.</p>
+      </div>
+    </section>
+
+    <!-- S-07 Register (FR-10, FR-15) -->
+    <section id="register" class="screen">
+      <div class="card narrow">
+        <h2>Create your account</h2>
+        <p>Gravity is for RSU students only. Register with your university email.</p>
+        <label>RSU email *<input id="r-email" placeholder="your.name@rsu.ac.th" /></label>
+        <p class="message error hidden" id="r-error">Please use your @rsu.ac.th email.</p>
+        <p class="message success hidden" id="r-success">Account created — your verified badge activates after a one-time in-person student ID check. We never store ID photos.</p>
+        <button class="btn primary" id="r-btn">Sign up</button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>Gravity — ICT111 Lab 05 wireframe · Team Gravity · Rangsit University</footer>
+
+  <script>
+    const listings = [
+      {id:"GL-001",cat:"Furniture",name:"Wooden study desk",price:800,area:"Dorm A lobby",status:"Available"},
+      {id:"GL-002",cat:"Appliances",name:"Mini fridge 45L",price:1500,area:"Building 6",status:"Reserved"},
+      {id:"GL-003",cat:"Textbooks",name:"ICT111 Intro to IT textbook",price:250,area:"ICT building",status:"Available"},
+      {id:"GL-004",cat:"Furniture",name:"Office chair with wheels",price:450,area:"Dorm B",status:"Sold"},
+      {id:"GL-005",cat:"Appliances",name:"Electric kettle 1.5L",price:200,area:"Dorm A",status:"Available"},
+      {id:"GL-006",cat:"Furniture",name:"4-tier bookshelf",price:600,area:"Condo near Gate 4",status:"Available"},
+      {id:"GL-007",cat:"Other",name:"LED desk lamp",price:150,area:"Library meetup",status:"Sold"},
+      {id:"GL-008",cat:"Textbooks",name:"Calculus textbook set",price:400,area:"Library meetup",status:"Reserved"}
+    ];
+
+    function show(screen){
+      document.querySelectorAll(".screen").forEach(s=>s.classList.remove("active"));
+      document.getElementById(screen).classList.add("active");
+      document.querySelectorAll("nav a").forEach(a=>a.classList.toggle("active",a.dataset.screen===screen));
+      window.scrollTo(0,0);
+    }
+    document.querySelectorAll("nav a").forEach(a=>a.onclick=e=>{e.preventDefault();show(a.dataset.screen);});
+    document.querySelectorAll("[data-goto]").forEach(b=>b.onclick=()=>show(b.dataset.goto));
+
+    let activeCat="All";
+    function renderGrid(){
+      const q=document.getElementById("search").value.toLowerCase();
+      const grid=document.getElementById("listing-grid");
+      const rows=listings.filter(l=>(activeCat==="All"||l.cat===activeCat)&&(l.name.toLowerCase().includes(q)||l.area.toLowerCase().includes(q)));
+      grid.innerHTML=rows.map(l=>`
+        <div class="listing" onclick="show('detail')">
+          <div class="thumb">Photo</div>
+          <div class="listing-body">
+            <div class="listing-top"><strong>${l.name}</strong><span class="badge ${l.status.toLowerCase()}">${l.status}</span></div>
+            <span class="price">฿${l.price.toLocaleString()}</span>
+            <span class="meta">${l.cat} · ${l.area}</span>
+          </div>
+        </div>`).join("");
+      document.getElementById("empty-state").classList.toggle("hidden",rows.length>0);
+    }
+    document.getElementById("search").oninput=renderGrid;
+    document.querySelectorAll(".chip").forEach(c=>c.onclick=()=>{
+      activeCat=c.dataset.cat;
+      document.querySelectorAll(".chip").forEach(x=>x.classList.toggle("active",x===c));
+      renderGrid();
+    });
+    renderGrid();
+
+    document.getElementById("post-btn").onclick=()=>{
+      const ok=["f-title","f-cat","f-price","f-cond","f-area"].every(id=>document.getElementById(id).value.trim()!=="");
+      document.getElementById("form-error").classList.toggle("hidden",ok);
+      document.getElementById("form-success").classList.toggle("hidden",!ok);
+    };
+
+    document.getElementById("contact-btn").onclick=function(){
+      document.getElementById("contact-sent").classList.remove("hidden");
+      this.disabled=true;this.textContent="Request sent";
+    };
+
+    document.getElementById("r-btn").onclick=()=>{
+      const ok=document.getElementById("r-email").value.trim().toLowerCase().endsWith("@rsu.ac.th");
+      document.getElementById("r-error").classList.toggle("hidden",ok);
+      document.getElementById("r-success").classList.toggle("hidden",!ok);
+    };
+
+    document.getElementById("admin-rows").innerHTML=listings.slice(0,4).map(l=>`
+      <tr><td>${l.id}</td><td>${l.name}</td>
+      <td><select><option${l.status==="Available"?" selected":""}>Available</option><option${l.status==="Reserved"?" selected":""}>Reserved</option><option${l.status==="Sold"?" selected":""}>Sold</option></select></td>
+      <td><button class="btn small" onclick="document.getElementById('admin-msg').classList.remove('hidden')">Update</button>
+      <button class="btn small danger" onclick="if(confirm('Delete this listing? This cannot be undone.'))this.closest('tr').remove()">Remove</button></td></tr>`).join("");
+  </script>
+</body>
+</html>
