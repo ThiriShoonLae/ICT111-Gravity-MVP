@@ -123,3 +123,35 @@ Full prioritization: [`/docs/mvp-feature-list.md`](docs/mvp-feature-list.md) · 
 
 ### GitHub Contribution Evidence
 All members contributed to this repository through commits, issues, and documentation updates for Lab 04 (see commit history and Issues #-#).
+
+## Lab 05: Product Concept and UI/UX Wireframe
+
+In Lab 05 we converted the Lab 04 requirements into a product concept and a full set of wireframes that become the visual baseline for the final prototype. The wireframes are built in HTML/CSS/JS, so the same files also serve as the clickable draft.
+
+### Product Concept
+Gravity is a web-based, mobile-friendly secondhand marketplace exclusively for verified RSU students. Sellers moving out post persistent, categorized listings once; buyers browse, search, and filter; statuses keep information current; and contact details are revealed only after both sides agree. Gravity connects people — it does not hold inventory or process payments. Full concept: [`/docs/product-concept.md`](docs/product-concept.md)
+
+### Requirement-Driven Screens
+| Screen | Related Requirement IDs | Wireframe File |
+|---|---|---|
+| Homepage / Landing | FR-01, FR-02 | /wireframes/homepage.png |
+| Create Listing form | FR-03, FR-10, FR-11 | /wireframes/input-form.png |
+| Listings page (browse/search/filter) | FR-05, FR-06, FR-08 | /wireframes/record-list.png |
+| Listing detail view | FR-07, FR-08, FR-15 | /wireframes/detail-view.png |
+| Dashboard / Summary | FR-12 | /wireframes/dashboard.png |
+| Admin panel | FR-09, FR-08 | /wireframes/admin-view.png |
+| Register / verify (extra) | FR-10, FR-15 | /wireframes/register.png |
+
+Full mapping with user stories and prototype modules: [`/docs/feature-requirement-mapping.md`](docs/feature-requirement-mapping.md)
+
+### User Flow
+The main pathway runs landing → RSU verification → sell (post listing) or buy (search → detail → contact request) → mutual agreement → contact revealed → deal completed → status Sold, with an admin lane for verification and moderation. Diagrams: [`/diagrams/user-flow.mmd`](diagrams/user-flow.mmd) (renders on GitHub) and [`/diagrams/user-flow.png`](diagrams/user-flow.png) from Lab 04.
+
+### Clickable Draft
+`/prototype/wireframe/index.html` — open in any browser. Navigation switches between all 7 screens; the draft includes working demo interactions: category filtering, search, form validation with error/success messages, RSU email check, contact request feedback, and admin status updates using the shared demo dataset [`/data/sample-listings.csv`](data/sample-listings.csv).
+
+### Team Contribution
+All members contributed to the same repository through commits, issues, and documentation (see Issues and commit history).
+
+---
+---
