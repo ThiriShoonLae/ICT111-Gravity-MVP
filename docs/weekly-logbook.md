@@ -135,3 +135,50 @@ The lecturer's system-requirements.md (FR-01–FR-16) is fixed and adopted as-is
 | Export user-flow.png and use-case-diagram.png from draw.io and commit to /diagrams | Thiri Shoon Lae Oo | Before Lab 05 | Issue 4 |
 | Verify traceability: every FR maps to a story, feature, and planned screen | Hein Htet Aung | Before Lab 05 | Issue 6 |
 | Choose prototype platform and prepare initial screen skeleton per FR-13 | Eimyat Yadanar Mon | Before Lab 05 | (create new issue) |
+
+## Lab 05: Product Concept and UI/UX Wireframe
+
+### Group Name
+Gravity
+
+### Project Title
+Gravity — RSU Student Secondhand Marketplace
+
+### Lab 05 Focus
+Product Concept and UI/UX Wireframe
+
+### What We Completed Today
+- [x] Reviewed Lab 04 requirements (FR-01–FR-16 + NFRs)
+- [x] Defined product concept (`/docs/product-concept.md`)
+- [x] Mapped features to requirements (`/docs/feature-requirement-mapping.md`)
+- [x] Created required wireframe screens (7 screens: 6 required + register)
+- [x] Created user flow diagram (`/diagrams/user-flow.mmd`, plus Lab 04's `/diagrams/user-flow.png`)
+- [x] Built clickable prototype draft (HTML/CSS/JS wireframe in `/prototype/wireframe/`)
+- [x] Updated GitHub repository
+
+### Member Contributions
+| Member Name | Contribution | Evidence / Commit Link |
+|---|---|---|
+| Hein Htet Aung | Product concept, README + logbook update, screenshot exports | (paste commit link) |
+| Thiri Shoon Lae Oo | Wireframe screens, usability checklist review, user flow | (paste commit link) |
+| Eimyat Yadanar Mon | Feature-requirement mapping, sample dataset, clickable draft testing | (paste commit link) |
+
+### Decisions Made
+| Decision | Reason | Related Requirement |
+|---|---|---|
+| Build wireframes in HTML/CSS instead of Figma-only | The same file works as the Lab 05 clickable draft and becomes the direct skeleton for the final web prototype — less rework later | FR-13, FR-14 |
+| Add a 7th screen (Register/verify) beyond the six required | RSU verification is Gravity's core trust differentiator from Lab 03 evidence (E05) | FR-10, FR-15 |
+| One shared demo dataset (`/data/sample-listings.csv`) feeds all screens | Keeps list, detail, dashboard, and admin numbers consistent, simulating FR-04 data storage | FR-04, FR-12 |
+| Status color code fixed: green Available, amber Reserved, gray Sold | Consistent status language across every screen | FR-08, FR-13 |
+
+### Problems Found
+- Fitting search, filter chips, and cards on a mobile width required stacking to a single column below 640px.
+- Deciding how much interactivity a "wireframe" needs — we added lightweight demo interactions (filtering, validation, status update) so the screen sequence is understandable without a backend.
+
+### Next Steps Before Lab 06
+- Export all 7 screens as PNGs into `/wireframes/` and add screenshots to `/screenshots/`.
+- Collect quick usability feedback from 2–3 classmates using the clickable draft.
+- Decide the final prototype platform (extend this HTML/CSS draft with real data storage vs. low-code tool).
+
+---
+---
