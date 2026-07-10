@@ -1,0 +1,19 @@
+flowchart TD
+    A[Seller fills Create Listing form] --> B{Input validation}
+    B -->|Invalid| C[Show 'Please complete required fields']
+    C --> A
+    B -->|Valid| D[Save listing - status Available]
+    D --> E[Show 'Listing posted successfully']
+    D --> F[Listings page]
+    F --> G[Buyer searches / filters by category and price]
+    G --> H[Listing detail view]
+    H --> I[Buyer sends contact request - status Pending]
+    I --> J{Seller accepts?}
+    J -->|Declined| K[Buyer notified - no contact revealed]
+    J -->|Accepted| L[Contact details revealed to both sides]
+    L --> M[Deal completed on campus]
+    M --> N[Seller updates listing status to Sold]
+    N --> O[Dashboard recalculates totals by status and category]
+    P[Admin reviews listings] --> Q[Update status / remove invalid listing]
+    Q --> F
+    Q --> O

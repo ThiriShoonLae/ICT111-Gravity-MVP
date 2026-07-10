@@ -1,0 +1,18 @@
+flowchart LR
+    SELLER[Seller - verified RSU student] --> UI[Gravity web interface - mobile-first HTML/CSS/JS]
+    BUYER[Buyer - verified RSU student] --> UI
+
+    UI --> REG[Register / verify screen]
+    UI --> FORM[Create Listing form + validation]
+    FORM --> STORE[(JSON seed + localStorage)]
+    STORE --> LIST[Listings page - search and category filter]
+    LIST --> DETAIL[Listing detail view + verified badge]
+    DETAIL --> REQ[Contact request - reveal after both agree]
+    REQ --> STORE
+    STORE --> DASH[Dashboard - totals by status and category]
+
+    ADMIN[Admin - Gravity team] --> ADMINP[Admin panel]
+    ADMINP --> VERIFY[Approve student verification]
+    ADMINP --> STATUS[Update status / remove listing]
+    VERIFY --> STORE
+    STATUS --> STORE
