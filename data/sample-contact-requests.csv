@@ -1,0 +1,6 @@
+request_id,listing_id,buyer_id,request_status,created_date
+CR-001,GL-002,U004,Accepted,2026-06-22
+CR-002,GL-001,U002,Pending,2026-06-25
+CR-003,GL-008,U004,Accepted,2026-06-27
+CR-004,GL-003,U002,Declined,2026-06-24
+CR-005,GL-006,U004,Pending,2026-06-28

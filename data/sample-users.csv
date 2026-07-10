@@ -1,0 +1,6 @@
+user_id,display_name,rsu_email,role,verified,joined_date
+U001,Su Su,su.su@rsu.ac.th,student,true,2026-06-18
+U002,Kaung M.,kaung.m@rsu.ac.th,student,true,2026-06-19
+U003,Pim N.,pim.n@rsu.ac.th,student,false,2026-06-22
+U004,Nine,nine.k@rsu.ac.th,student,true,2026-06-20
+U005,Gravity Admin,gravity.admin@rsu.ac.th,admin,true,2026-06-15
