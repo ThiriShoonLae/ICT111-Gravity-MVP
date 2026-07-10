@@ -155,3 +155,27 @@ All members contributed to the same repository through commits, issues, and docu
 
 ---
 ---
+
+## Lab 06: Business Model Canvas and Technical Architecture
+
+In Lab 06 we connected the product concept, requirements, user stories, and wireframes into business logic and technical structure — how Gravity creates value, and how the final prototype will be built.
+
+### Files Added or Updated
+
+- [Business Model Canvas](docs/business-model-canvas.md)
+- [Feature-Value Mapping](docs/feature-value-mapping.md)
+- [Technical Architecture](docs/technical-architecture.md)
+- [Data Structure](docs/data-structure.md)
+- [System Architecture Diagram](diagrams/system-architecture.mmd)
+- [Data Flow Diagram](diagrams/data-flow.mmd)
+- Sample datasets: [listings](data/sample-listings.csv) · [users](data/sample-users.csv) · [contact requests](data/sample-contact-requests.csv) · [customer segments](data/customer-segments.csv)
+- [Weekly Logbook](docs/weekly-logbook.md)
+
+### Technical Direction
+**Frontend + localStorage/JSON.** The final prototype extends the Lab 05 HTML/CSS wireframe with JavaScript: listings seed from a JSON dataset, user actions persist in browser localStorage, and the dashboard computes live from the same data. Deployment on GitHub Pages gives a free public URL. Real email confirmation, real-time mutual-agreement notifications, and photo upload are simulated, as documented in the technical architecture.
+
+### Final Prototype Connection
+Lab 06 is the build plan: the feature-value mapping fixes which features must exist and why (F01–F12 → FR-01–16), the data structure defines the exact records and validation the JavaScript will implement, the architecture diagram shows how data moves from input to storage to list/detail/status/admin/dashboard, and the risk section pre-answers the demo's failure modes. The business model explains the "why" behind scope decisions — free connector model, verification as the differentiator, no payments.
+
+---
+---
