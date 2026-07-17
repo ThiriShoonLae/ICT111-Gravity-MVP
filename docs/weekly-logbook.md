@@ -220,3 +220,30 @@ Gravity — RSU Student Secondhand Marketplace
 - Enable GitHub Pages so the prototype has a live URL for the demo.
 
 ### Lecturer / TA Notes
+## Lab 08: Customer Validation and Analytics Sheet
+
+### Group Information
+- Group name: Gravity
+- Project title: Gravity — RSU Student Secondhand Marketplace
+- Repository link: https://github.com/ruinogenesis/ICT111-Gravity-MVP
+- Lab date: 17 July 2026
+
+### Work Completed Today
+- [x] Reviewed Lab 07 MVP experiment plan and success metrics
+- [x] Prepared validation dataset structure (/data/validation-results.csv with the 12 required columns)
+- [x] Prepared analytics workbook with auto-calculating dashboard (task success rate, average scores, confusion counts, Lab 07 target checks)
+- [x] Prepared skeleton analysis documents (validation summary, analytics insights, MVP decision, test-user notes)
+- [ ] Validation sessions: scheduled with 5 testers (2 seller-side, 2 buyer-side, 1 no-experience) — results will be entered as sessions complete on 17–18 July
+
+### Member Contributions
+| Member Name | Contribution | GitHub Evidence |
+|---|---|---|
+| Hein Htet Aung | Session scheduling and tester recruitment | (commit link) |
+| Thiri Shoon Lae Oo | Feedback recording setup, test-user notes template | (commit link) |
+| Eimyat Yadanar Mon | Analytics sheet structure and metric formulas | (commit link) |
+
+### Problems Found
+Tester recruitment could not be completed before the deadline; the validation data structure, analytics sheet, and analysis documents were prepared first so results can be entered immediately as each session finishes. Sessions run 17–18 July.
+
+### Next Actions
+Complete the 5 sessions, enter rows into /data/validation-results.csv and the analytics workbook, then finalize customer-validation-summary.md, analytics-insights.md, and mvp-decision.md using the decision rules in /docs/success-metrics.md.
