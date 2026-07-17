@@ -197,3 +197,21 @@ Validation structure, analytics sheet, and analysis documents are prepared and c
 - [/docs/analytics-insights.md](docs/analytics-insights.md)
 - [/docs/mvp-decision.md](docs/mvp-decision.md)
 - [/docs/test-user-notes.md](docs/test-user-notes.md)
+- ## Lab 08: Customer Validation and Analytics Sheet
+
+### Validation Objective
+Test the core Gravity workflow (post a listing, search/filter, detail view, status comprehension, reveal-after-agree contact) with 5 RSU student testers and make an evidence-based build/revise/revisit decision before the implementation sprint.
+
+### Prototype Version Tested
+- Version: v0.1 (working localStorage demo)
+- Link: [/prototype/mvp-demo.html](prototype/mvp-demo.html)
+
+### Status
+Validation structure, analytics sheet, and analysis documents are prepared and committed. Test sessions are scheduled for 17–18 July; the analytics summary table and MVP decision will be completed as results are entered.
+
+### Files Added
+- [/data/validation-results.csv](data/validation-results.csv)
+- [/docs/customer-validation-summary.md](docs/customer-validation-summary.md)
+- [/docs/analytics-insights.md](docs/analytics-insights.md)
+- [/docs/mvp-decision.md](docs/mvp-decision.md)
+- [/docs/test-user-notes.md](docs/test-user-notes.md)
